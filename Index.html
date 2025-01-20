@@ -1,0 +1,59 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Jost:ital,wght@0,100..900;1,100..900&family=Markazi+Text:wght@400..700&family=Mogra&display=swap" rel="stylesheet">        <title>Ten$ion Crew</title>
+    </head>
+    <body style="background-image: url(https://github.com/Pugatboss/html-portfolio/blob/main/Bg.png?raw=true);background-size: cover; background-position: center;">
+        <h1 style="color: #708090; font-weight: bold; font-size: 75px; font-family: 'Lobster', serif; text-shadow: -2px -2px 0 #c0fcf8, 2px -2px 0 #c0fcf8, -2px 4px 0 #c0fcf8, 2px 2px 0 #c0fcf8; text-align: center;">Welcome To The Ten$ion Crew Official</h1>
+        <h2 style="color: #9d0051; font-weight: bold; font-size: 50px; font-family: 'Gabriela', serif; text-shadow: -2px -2px 0 #c0fcf8, 2px -2px 0 #c0fcf8, -2px 4px 0 #c0fcf8, 2px 2px 0 #c0fcf8; text-align: center;">Where Common Sense and Positivty are Paramount</h2>
+        <ul>
+            <h3 style="color: #9d0051; font-weight: bold; font-size: 40px; font-family: 'Mogra', serif; text-shadow: -2px -2px 0 #c0fcf8, 2px -2px 0 #c0fcf8, -2px 4px 0 #c0fcf8, 2px 2px 0 #c0fcf8;">Who am I?</h3>
+                <p style="color: #9d0051; font-weight: bold; font-size: 35px; font-family: 'Mogra', serif; text-shadow: -2px -2px 0 #c0fcf8, 2px -2px 0 #c0fcf8, -2px 4px 0 #c0fcf8, 2px 2px 0 #c0fcf8;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur maximus blandit. Suspendisse potenti. Ut pulvinar massa sed ante vehicula varius. Etiam malesuada semper dui ac sagittis. Vivamus sit amet neque vitae elit ornare pretium id eget orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis enim eu sapien eleifend consectetur. Suspendisse a posuere purus. Mauris rutrum pellentesque leo nec pharetra. Donec commodo ligula varius magna fringilla aliquam. Fusce faucibus odio pharetra elit posuere elementum. Ut faucibus viverra auctor. Aenean elementum ultrices ligula ut tempor. Aenean semper nunc ac fringilla pulvinar. Donec elementum, arcu non accumsan iaculis, nibh ex commodo sem, ac porttitor nunc tellus eu est. </p><br>
+
+        </ul>
+        <p class="center_text" style="color: #9d0051; font-weight: bold; font-size: 30px; font-family: 'Bangers', serif; text-shadow: -2px -2px 0 #c0fcf8, 2px -2px 0 #c0fcf8, -2px 4px 0 #c0fcf8, 2px 2px 0 #c0fcf8; text-align: center;">MANIFEST YOUR DREAMS AND SHOW THE WORLD WHO YOU ARE</p>
+        <h2 style="color: #9d0051; font-weight: bold; font-size: 30px; font-family: 'Lobster', serif; text-shadow: -2px -2px 0 #c0fcf8, 2px -2px 0 #c0fcf8, -2px 4px 0 #c0fcf8, 2px 2px 0 #c0fcf8; text-align: center;">Join The Community</h2>
+        <div style="text-align: center;">
+            <a href="https://rumble.com/user/TENTION420"><img src="https://github.com/Pugatboss/html-portfolio/blob/main/Rumble.png?raw=true" alt="The rumble logo" width=60></a>
+            <a href="https://www.twitch.tv/tention47"><img src="https://github.com/Pugatboss/html-portfolio/blob/main/Twitch.png?raw=true" alt="The twitch logo" width = 60/></a>
+            <a href="https://www.instagram.com/ascensionzzz/"><img src="https://github.com/Pugatboss/html-portfolio/blob/main/Instagram.png?raw=true" alt ="The instagram logo" width = 60/></a>
+            <a href ="https://x.com/TENTION420"><img src="https://github.com/Pugatboss/html-portfolio/blob/main/X.png?raw=true" alti="The x logo" width = 60/></a>
+            <a href ="https://www.youtube.com/@ascensionzzz"><img src="https://github.com/Pugatboss/html-portfolio/blob/main/Youtube%20logo.png?raw=true" alti="The youtube logo" width = 60/></a>
+        </div>
+        <p style="color: #9d0051; font-weight: bold; font-size: 50px; font-family: 'Gabriela', serif; text-shadow: -2px -2px 0 #c0fcf8, 2px -2px 0 #c0fcf8, -2px 4px 0 #c0fcf8, 2px 2px 0 #c0fcf8; text-align: center;">Or Watch Embedded On Your Favorite Platform!</p>
+        <style>
+            .large-button
+            {
+            padding: 20px 40px;
+            font-size: 20px;
+            }
+        </style>
+        <div style="text-align: center;">
+            <iframe id="embed"
+                src="https://rumble.com/embed/v68veny/?pub=4g82vp&parent=pugatboss.github.io" 
+                frameborder="0" 
+                allowfullscreen="true" 
+                scrolling="no" 
+                height="378" 
+                width="620">
+            </iframe>
+            <hr style="color:#c0fcf8">
+            <button type="button" class="large-button" onclick="switchPlatform()">Switch Platform</button>
+        </div>
+
+        <script>
+            let currentPlatform = 'rumble';
+            function switchPlatform() {
+                const iframe = document.getElementById('embed');
+                if (currentPlatform === 'rumble') {
+                    iframe.src = 'https://www.twitch.tv/embed/tention47/chat?parent=pugatboss.github.io';
+                    currentPlatform = 'twitch';
+                } else {
+                    iframe.src = 'https://rumble.com/embed/v68veny/?pub=4g82vp&parent=pugatboss.github.io';
+                    currentPlatform = 'rumble';
+                }
+            }
+        </script>
+</html>
